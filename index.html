@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#birthday">Birthday</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#countries">Countries</a></li>
+      <li><a href="#cv">My CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page 1: Home -->
+ <section class="about">
+  <h2>Hi, I'm Basmala</h2>
+
+  <p class="about-desc">
+    Front-End Engineer experienced in building scalable, high-performance web applications using React.js, 
+Next.js, and TypeScript. Skilled in modern UI/UX design, RESTful API integration, responsive design, and 
+web accessibility. Committed to writing clean, maintainable code and continuously learning emerging 
+technologies.
+  </p>
+
+  <img src="photo_2025-02-19_20-35-51.jpg" alt="Profile" class="about-img" />
+  <h3 class="about-name">Basmala</h3>
+  <p class="about-role">Product Designer</p>
+</section>
+
+
+  <!-- Page 2: Hobbies -->
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="hobby-gallery">
+      <img src="download.jpg" alt="Hobby 1" />
+      <img src="images.jpg" alt="Hobby 2"/>
+      <img src="download (4).jpg" alt="Hobby 3"/>
+    </div>
+  </section>
+<section class="birthday">
+  <h2>Birthday Wishes</h2>
+
+  <div id="birthday-content" class="birthday-card">
+    <img src="download (2).png" alt="Birthday" class="birthday-img" />
+    <p class="birthday-text">🎉 It's my birthday! 🎉</p>
+  </div>
+</section>
+
+
+
+
+  <!-- Page 4: Contact Us -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="socials">
+     <a class="social-icon" href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+    <a class="social-icon" href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a class="social-icon" href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- Page 5: Countries Slider -->
+  <section id="countries">
+    <h2>Countries I Want to Visit</h2>
+    <div class="slider">
+      <div class="slide">
+        <p>Japan</p>
+        <img src="download (1).jpg" alt="Japan" />
+      </div>
+      <div class="slide">
+        <p>France</p>
+        <img src="download (2).jpg" alt="France" />
+      </div>
+      <div class="slide">
+        <p>Italy</p>
+        <img src="download (3).jpg" alt="Italy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 6: My CV -->
+ <section class="cv">
+  <h2>My CV</h2>
+
+  <img src="photo_2025-02-19_20-35-51.jpg" alt="Profile" class="cv-img" />
+  <h3 class="cv-name">Basmala Waled</h3>
+  <p class="cv-email">basmlawaled1@email.com</p>
+
+  <h4 class="cv-subtitle">Skills</h4>
+  <p class="cv-skills">
+    Project Management - Communication - Problem-solving - Leadership - Time Management - Adaptability - Teamwork - Critical Thinking - Creativity - Technical Proficiency
+  </p>
+</section>
+<script>
+  setTimeout(() => {
+    const birthdayDiv = document.getElementById("birthday-content");
+
+    birthdayDiv.innerHTML = `
+      <h3>Write me a nice letter🎉</h3>
+      <textarea placeholder="Write your birthday message here.."></textarea><br />
+      <button id="submit-btn">Submit</button>
+    `;
+
+    document.getElementById("submit-btn").addEventListener("click", () => {
+      birthdayDiv.innerHTML = `
+        <h3>شكرًا على رسالتك الجميلة ❤️</h3>
+        <p>اتمنى تكون عجبتك الصفحة 🎂</p>
+      `;
+    });
+  }, 5000);
+</script>
+
+</body>
+</html>
